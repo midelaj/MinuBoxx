@@ -6,9 +6,14 @@ import { useBusinessStore } from "@/lib/store";
 import { themeColors } from "@/lib/colorTheme";
 import Link from "next/link";
 import Button from "./Button";
+import { useParams } from "next/navigation";
 
 export const FeaturedProducts = () => {
+  const params = useParams();
+  const businSlug = params.businessSlug;
   const theme = useBusinessStore((state) => state.theme);
+  const businessType = useBusinessStore((state) => state.businessType);
+
   const colors = themeColors[theme];
   const featuredProducts = PRODUCTS.filter((p) => p.featured).slice(0.4);
 
@@ -43,7 +48,7 @@ export const FeaturedProducts = () => {
         </div>
       </div>
       <div className="text-center mt-16">
-        <Button to="/" variant="secondary">
+        <Button to={`${businSlug}/categories`} variant="secondary">
           View All Products
         </Button>
       </div>
