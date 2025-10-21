@@ -9,5 +9,5 @@ export default async function BusinessPage({ params }) {
   const Template = (await import(`@/templates/${businessType}/${templ}.jsx`))
     .default;
 
-  return <Template data={data} theme={theme} />;
+  return <Template businessType={businessType} data={data} theme={theme} />;
 }

@@ -41,7 +41,7 @@ export const Footer = () => {
               className="text-2xl font-bold mb-4"
               style={{
                 fontFamily: "Playfair Display, serif",
-                color: colors.text,
+                color: colors?.text,
               }}
             >
               Royal Nilambur
@@ -83,8 +83,8 @@ export const Footer = () => {
               Quick Links
             </h4>
             <ul className="space-y-3">
-              {quickLinks.map((link) => (
-                <li key={link.id}>
+              {quickLinks.map((link, i) => (
+                <li key={i}>
                   <Link
                     href={`${businSlug}/${link.to}`}
                     className="transition-colors hover:opacity-70"

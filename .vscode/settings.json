@@ -1,0 +1,26 @@
+{
+  "workbench.colorCustomizations": {},
+  // "editor.tokenColorCustomizations": {
+  //   "textMateRules": [
+  //     {
+  //       "scope": "string",
+  //       "settings": {
+  //         "foreground": "#98f424" // green for string / text
+  //       }
+  //     },
+  //     {
+  //       "scope": "keyword",
+  //       "settings": {
+  //         //   "foreground": "#ff5c57" // red for keywords etc
+  //       }
+  //     },
+  //     {
+  //       "scope": "variable",
+  //       "settings": {
+  //         "foreground": "#58d1eb" // blueish for vars
+  //       }
+  //     }
+  //     // add more scopes (comments, types, functions...) as needed
+  //   ]
+  // }
+}
