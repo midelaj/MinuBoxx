@@ -12,8 +12,10 @@ export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const theme = useBusinessStore((state) => state.theme);
+  console.log("theme", theme);
+
   const colors = themeColors[theme];
-  console.log({ theme: theme, colors: colors, themecolor: themeColors });
+  console.log("color in nav", colors);
 
   useEffect(() => {
     const handleScroll = () => {
