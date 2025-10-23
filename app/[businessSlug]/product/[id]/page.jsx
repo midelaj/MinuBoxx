@@ -7,6 +7,7 @@ export default async function ProductPage({ params }) {
   const { businessType, theme, data } = business;
 
   const paramsId = Number(params.id);
+
   const product = data?.products?.find((p) => p.id === paramsId);
 
   if (!product) return <h1>Product not founded</h1>;

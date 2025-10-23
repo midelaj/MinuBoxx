@@ -1,8 +1,10 @@
 "use client";
+import { themeColors } from "@/lib/colorTheme";
 import { useBusinessStore } from "@/lib/store";
 
 export default function HeroVh() {
-  const currentTheme = useBusinessStore((state) => state.theme);
+  const theme = useBusinessStore((state) => state.theme);
+  const currentTheme = themeColors[theme];
   const buttonClass = `px-8 py-3 rounded-md text-lg font-semibold transition-colors duration-300 transform hover:scale-105`;
 
   return (
@@ -28,7 +30,7 @@ export default function HeroVh() {
         </p>
         <a
           href="#vehicles"
-          className={`mt-8 inline-block ${buttonClass} ${currentTheme.background} `}
+          className={`mt-8 inline-block ${buttonClass} ${currentTheme.button.primary} ${currentTheme.button.primaryText} ${currentTheme.button.primaryHover} `}
         >
           View Vehicles
         </a>

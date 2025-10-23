@@ -473,7 +473,7 @@ export const PRODUCTS = [
 //vehicles
 export const dummy_vehicles = [
   {
-    id: "1",
+    id: 1,
     name: "2023 Tesla Model 3",
     image: "https://picsum.photos/seed/tesla/800/600",
     price: 45000,
@@ -487,7 +487,7 @@ export const dummy_vehicles = [
       "Experience the future of driving with the Tesla Model 3. Instant torque, long range, and advanced autopilot features.",
   },
   {
-    id: "2",
+    id: 2,
     name: "2022 Toyota Fortuner 4x4",
     image: "https://picsum.photos/seed/fortuner/800/600",
     price: 52000,
@@ -501,7 +501,7 @@ export const dummy_vehicles = [
       "A rugged and reliable SUV built to conquer any terrain. The Fortuner combines luxury with off-road capability.",
   },
   {
-    id: "3",
+    id: 3,
     name: "2023 Audi A6 Sedan",
     image: "https://picsum.photos/seed/audia6/800/600",
     price: 65000,
@@ -515,7 +515,7 @@ export const dummy_vehicles = [
       "The Audi A6 is the pinnacle of luxury sedans, offering a smooth ride, powerful performance, and a tech-forward interior.",
   },
   {
-    id: "4",
+    id: 4,
     name: "2022 Mahindra Thar Diesel",
     image: "https://picsum.photos/seed/thar/800/600",
     price: 22000,
@@ -529,7 +529,7 @@ export const dummy_vehicles = [
       "The iconic Mahindra Thar is an adventurer's dream. Its classic design and robust build make it perfect for off-roading.",
   },
   {
-    id: "5",
+    id: 5,
     name: "2024 Ford F-150",
     image: "https://picsum.photos/seed/f150/800/600",
     price: 58000,
@@ -543,7 +543,7 @@ export const dummy_vehicles = [
       "America's best-selling truck, the F-150, is tougher and smarter than ever before. Built for work and play.",
   },
   {
-    id: "6",
+    id: 6,
     name: "2023 BMW X5",
     image: "https://picsum.photos/seed/bmwx5/800/600",
     price: 75000,
@@ -557,7 +557,7 @@ export const dummy_vehicles = [
       "A leader in the luxury SUV segment, the BMW X5 offers dynamic performance, premium comfort, and cutting-edge technology.",
   },
   {
-    id: "7",
+    id: 7,
     name: "2023 Porsche 911 Carrera",
     image: "https://picsum.photos/seed/porsche911/800/600",
     price: 115000,
@@ -571,7 +571,7 @@ export const dummy_vehicles = [
       "The timeless Porsche 911 continues to define what a sports car should be, with breathtaking performance and iconic design.",
   },
   {
-    id: "8",
+    id: 8,
     name: "2022 Rivian R1T",
     image: "https://picsum.photos/seed/rivian/800/600",
     price: 80000,

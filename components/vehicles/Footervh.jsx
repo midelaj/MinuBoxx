@@ -1,9 +1,11 @@
 import React from "react";
 // import { useAppContext } from "../contexts/AppContext";
 import { useBusinessStore } from "@/lib/store";
+import { themeColors } from "@/lib/colorTheme";
 
 function FooterVh() {
-  const currentTheme = useBusinessStore((state) => state.theme);
+  const theme = useBusinessStore((state) => state.theme);
+  const currentTheme = themeColors[theme];
 
   return (
     <footer

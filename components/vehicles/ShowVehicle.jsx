@@ -35,12 +35,6 @@ export default function ShowVehicle() {
           <h2 className={`text-3xl font-bold ${currentTheme.text}`}>
             Featured Vehicles
           </h2>
-          <button
-            onClick={() => setIsModalOpen(true)}
-            className={`mt-4 md:mt-0 ${buttonClass} text-base ${currentTheme.button.secondary} ${currentTheme.button.secondaryText} ${currentTheme.button.secondaryHover}`}
-          >
-            Add Vehicle
-          </button>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {vehicles.slice(0, visibleCount).map((vehicle) => (

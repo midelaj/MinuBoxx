@@ -1,10 +1,16 @@
 import { themeColors } from "@/lib/colorTheme";
 import { useBusinessStore } from "@/lib/store";
+import { buildProductUrl } from "@/lib/urlBuilder";
 import Link from "next/link";
+import { useParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 function VehicleCard({ currentTheme, vehicle }) {
+  const params = useParams();
+  const businSlug = params.businessSlug;
+  const router = useRouter();
   return (
-    <Link href={`/vehicles/${vehicle.id}`}>
+    <div onClick={() => router.push(buildProductUrl(businSlug, vehicle.id))}>
       <div
         className={`overflow-hidden rounded-lg ${currentTheme.card.background} ${currentTheme.card.border} border ${currentTheme.card.shadow} ${currentTheme.card.hover} transition-all duration-300 transform hover:-translate-y-1 group`}
       >
@@ -29,7 +35,7 @@ function VehicleCard({ currentTheme, vehicle }) {
           </p>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
 

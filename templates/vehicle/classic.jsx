@@ -21,7 +21,7 @@ export default function vehicleClassic({ businessType, data, theme }) {
   return (
     <VehicleLayout>
       <HeroVh />
-      <ShowVehicle/>s
+      <ShowVehicle />
     </VehicleLayout>
   );
 }

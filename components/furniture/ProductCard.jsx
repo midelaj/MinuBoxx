@@ -7,8 +7,7 @@ import { buildProductUrl } from "@/lib/urlBuilder";
 
 const ProductCard = ({ product }) => {
   const params = useParams();
-  const businSlug = params.businessSlug;
-  const theme = useBusinessStore((state) => state.theme);
+  const businSlug = params.businessSlug;  const theme = useBusinessStore((state) => state.theme);
   const colors = themeColors[theme];
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter();
